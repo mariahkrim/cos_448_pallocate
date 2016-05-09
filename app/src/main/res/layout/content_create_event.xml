@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mariahk.pallocate.CreateEvent"
+    tools:showIn="@layout/activity_create_event">
+
+    <Button
+        android:id="@+id/create_event_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_event_button"
+        android:onClick="createNewEvent"
+        android:backgroundTintMode="src_over"
+        android:background="#565656"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:paddingStart="10px"
+        android:paddingEnd="10px"
+        android:layout_below="@+id/loc"
+        android:layout_alignRight="@+id/loc"
+        android:layout_alignEnd="@+id/loc"></Button>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventName"
+        android:layout_below="@+id/timePicker"
+        android:layout_alignRight="@+id/timePicker"
+        android:layout_alignEnd="@+id/timePicker"
+        android:text="Event Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/timePicker"
+        android:layout_toLeftOf="@+id/eventName"
+        android:layout_toStartOf="@+id/eventName"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc"
+        android:text="Location"
+        android:layout_below="@+id/eventName"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_alignRight="@+id/eventName"
+        android:layout_alignEnd="@+id/eventName" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:text="@string/time_picker_text"
+        android:touchscreenBlocksFocus="false"
+        android:contextClickable="true"
+        android:timePickerMode="clock"
+        android:numbersTextColor="#5AF7E6"
+        android:amPmBackgroundColor="#5AF7E6"
+        android:foregroundTint="#5AF7E6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/back_from_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="createNewEvent"
+        android:backgroundTintMode="src_over"
+        android:background="#565656"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:paddingStart="10px"
+        android:paddingEnd="10px"
+        android:layout_below="@+id/loc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

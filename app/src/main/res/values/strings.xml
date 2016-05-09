@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">pallocate</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="title_activity_create_event">CreateEvent</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="time_picker_text">Create Event</string>
+    <string name="Time">Time</string>
+    <string name="create_event_button">Make Event!</string>
+    <string-array name="locations">
+        <item>Select Location</item>
+        <item>Butler</item>
+        <item>CJL</item>
+        <item>Forbes</item>
+        <item>Mathey</item>
+        <item>Rocky</item>
+        <item>Whitman</item>
+        <item>Wilson</item>
+    </string-array>
+    <string name="title_activity_show_friends">pallocate</string>
+    <string name="title_activity_add_friends">pallocate</string>
+</resources>
